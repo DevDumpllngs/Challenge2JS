@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Lógica JS 2/7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="challenge-box">
+            <h1>Desafío Lógica JS 2/7</h1>
+            <div id="result-box" style="display: none;">
+                <p id="result-text"></p>
+                <p id="like-question"></p>
+            </div>
+            <button id="start-btn" onclick="openModal()">Empezar Desafío</button>
+        </div>
+    </div>
+
+    <!-- Modal de preguntas -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="question-text">¿Cuál es tu nombre?</p>
+            <input type="text" id="answer-input" placeholder="Escribe tu respuesta aquí...">
+            <button onclick="nextQuestion()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
